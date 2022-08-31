@@ -1,0 +1,7 @@
+library(plyr)
+library(tidyverse)
+library(GGally)
+library(devtools)
+library(usethis)
+library(ggbiplot)
+library(magrittr)
