@@ -22,3 +22,8 @@ chi_fit_tester <- function(var1, var2){
   chi_data <- as.table(chi_data)
   chisq.test(chi_data)
 }
+
+# RUNS PROBABILITY TESTING
+probability_tester <- function(possible_event_outcomes, total_possible_outcomes){
+  possible_event_outcomes / total_possible_outcomes
+}
