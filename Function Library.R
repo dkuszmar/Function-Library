@@ -23,7 +23,13 @@ chi_fit_tester <- function(var1, var2){
   chisq.test(chi_data)
 }
 
-# RUNS PROBABILITY TESTING
-probability_tester <- function(possible_event_outcomes, total_possible_outcomes){
+# RUNS PROBABILITY TESTING FOR DISCRETE UNIFORM DISTRIBUTIONS
+fair_probability_tester <- function(possible_event_outcomes, total_possible_outcomes){
   possible_event_outcomes / total_possible_outcomes
+}
+
+# CALCULATES CONTINUOUS PROBABILITY DISTRIBUTION
+continuous_probability_tester <- function(low_limit, high_limit, total_possible_outcomes){
+  fractional_outcomes <- 1/total_possible_outcomes
+  fractional_outcomes * (high_limit - low_limit)
 }
